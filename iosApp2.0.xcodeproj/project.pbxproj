@@ -14,6 +14,8 @@
 		EB4C2CD72A0A454B009FEAF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4C2CD52A0A454B009FEAF9 /* Main.storyboard */; };
 		EB4C2CD92A0A454D009FEAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4C2CD82A0A454D009FEAF9 /* Assets.xcassets */; };
 		EB4C2CDC2A0A454D009FEAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4C2CDA2A0A454D009FEAF9 /* LaunchScreen.storyboard */; };
+		EB4C2CE42A122D84009FEAF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4C2CE32A122D84009FEAF9 /* LoginViewController.swift */; };
+		EB4C2CE62A135458009FEAF9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4C2CE52A135458009FEAF9 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EB4C2CD82A0A454D009FEAF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4C2CDB2A0A454D009FEAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4C2CDD2A0A454D009FEAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4C2CE32A122D84009FEAF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB4C2CE52A135458009FEAF9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 				EB4C2CD82A0A454D009FEAF9 /* Assets.xcassets */,
 				EB4C2CDA2A0A454D009FEAF9 /* LaunchScreen.storyboard */,
 				EB4C2CDD2A0A454D009FEAF9 /* Info.plist */,
+				EB4C2CE32A122D84009FEAF9 /* LoginViewController.swift */,
+				EB4C2CE52A135458009FEAF9 /* SignupViewController.swift */,
 			);
 			path = iosApp2.0;
 			sourceTree = "<group>";
@@ -207,7 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4C2CE42A122D84009FEAF9 /* LoginViewController.swift in Sources */,
 				EB4C2CD42A0A454B009FEAF9 /* ViewController.swift in Sources */,
+				EB4C2CE62A135458009FEAF9 /* SignupViewController.swift in Sources */,
 				EB4C2CD02A0A454B009FEAF9 /* AppDelegate.swift in Sources */,
 				EB4C2CD22A0A454B009FEAF9 /* SceneDelegate.swift in Sources */,
 			);
@@ -369,7 +377,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				"OTHER_SWIFT_FLAGS[arch=*]" = DDEBUG;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "Nil.iosApp2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
