@@ -9,3 +9,4 @@ target 'iosApp2.0' do
 
 end
 pod 'MoEngage-iOS-SDK','~>9.8.0'
+pod 'MoEngageInApp','~> 4.8.1'

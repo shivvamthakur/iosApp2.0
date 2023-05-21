@@ -8,6 +8,7 @@
 
 import UIKit
 import MoEngageSDK
+
 class ViewController: UIViewController {
     
     
@@ -29,6 +30,8 @@ class ViewController: UIViewController {
     @IBAction func SignUpButton(_ sender: Any) {
         
         let Signup = storyboard?.instantiateViewController(identifier: "SignupViewController") as! SignupViewController
+        
+        MoEngageSDKAnalytics.sharedInstance.trackEvent("SignUP Screen open", withProperties: nil)
         
         self.present(Signup, animated: true)
     }

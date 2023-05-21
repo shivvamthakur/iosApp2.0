@@ -32,6 +32,7 @@
 		EB4C2CDD2A0A454D009FEAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB4C2CE32A122D84009FEAF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB4C2CE52A135458009FEAF9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		EBD4383C2A1A3B9400832BD7 /* MoEngage-iOS-InApps-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "MoEngage-iOS-InApps-master"; path = "../../Downloads/MoEngage-iOS-InApps-master"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 		EB4C2CC32A0A454B009FEAF9 = {
 			isa = PBXGroup;
 			children = (
+				EBD4383B2A1A3B9400832BD7 /* Packages */,
 				EB4C2CCE2A0A454B009FEAF9 /* iosApp2.0 */,
 				EB4C2CCD2A0A454B009FEAF9 /* Products */,
 				9545F71151C71EBF555C6996 /* Pods */,
@@ -96,6 +98,14 @@
 				EB4C2CE52A135458009FEAF9 /* SignupViewController.swift */,
 			);
 			path = iosApp2.0;
+			sourceTree = "<group>";
+		};
+		EBD4383B2A1A3B9400832BD7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				EBD4383C2A1A3B9400832BD7 /* MoEngage-iOS-InApps-master */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
