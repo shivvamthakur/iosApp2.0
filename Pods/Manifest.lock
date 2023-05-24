@@ -2,20 +2,31 @@ PODS:
   - MoEngage-iOS-SDK (9.8.0)
   - MoEngageInApp (4.8.1):
     - MoEngage-iOS-SDK (< 9.9.0, >= 9.8.0)
+  - MoEngageInbox (2.8.1):
+    - MoEngage-iOS-SDK (< 9.9.0, >= 9.8.0)
+    - MoEngageRichNotification (< 7.9.0, >= 7.8.0)
+  - MoEngageRichNotification (7.8.0):
+    - MoEngage-iOS-SDK (< 9.9.0, >= 9.8.0)
 
 DEPENDENCIES:
   - MoEngage-iOS-SDK (~> 9.8.0)
   - MoEngageInApp (~> 4.8.1)
+  - MoEngageInbox (~> 2.8.1)
+  - MoEngageRichNotification (~> 7.8.0)
 
 SPEC REPOS:
   trunk:
     - MoEngage-iOS-SDK
     - MoEngageInApp
+    - MoEngageInbox
+    - MoEngageRichNotification
 
 SPEC CHECKSUMS:
   MoEngage-iOS-SDK: df69cdd849b18548b4a1cadebfb7ab7a9b6d92b3
   MoEngageInApp: f0ae755165d85099f4ca9091b7ac433c28fe44db
+  MoEngageInbox: d7e111ed480281abe539a9f3ec5084e9f7f80656
+  MoEngageRichNotification: ef9f1ec806dcc8932a481faa68f89037df6dfc1b
 
-PODFILE CHECKSUM: b76d13c733772d2a2b5b34e9eeaa7563094be039
+PODFILE CHECKSUM: a54060146281c24f6850a6f6a6d2d817b50a8ed8
 
 COCOAPODS: 1.12.1

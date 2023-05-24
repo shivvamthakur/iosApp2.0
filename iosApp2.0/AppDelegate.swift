@@ -6,10 +6,10 @@
 //
 import UIKit
 import MoEngageSDK
-
+import SystemConfiguration
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate  {
 
 
 
@@ -17,19 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
      
+        
+       
          //Add your MoEngage App ID
          var sdkConfig = MoEngageSDKConfig(withAppID: "5ZCYAM3ICF13B6YGB13EPTTM")
+        sdkConfig.appGroupID = "group.moengage.alphadevs.moengage"
+        sdkConfig.enableLogs = true
          // Separate initialization methods for Dev and Prod initializations
          #if DEBUG
              MoEngage.sharedInstance.initializeDefaultTestInstance(sdkConfig, sdkState: .enabled)
          #else
              MoEngage.sharedInstance.initializeDefaultLiveInstance(sdkConfig, sdkState: .enabled)
          #endif
-    
+        
+        
+        MoEngageSDKMessaging.sharedInstance.registerForRemoteNotification(withCategories: nil)
      //Rest of the implementation of method
      //-------
      return true
+    
    }
+    
      
     // MARK: UISceneSession Lifecycle
 
