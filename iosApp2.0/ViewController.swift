@@ -19,10 +19,12 @@ class ViewController: UIViewController {
     
     @IBAction func LoginButton(_ sender: Any) {
         
+        
+        MoEngageSDKAnalytics.sharedInstance.setUniqueID(Username.text ?? " ")
         let Login = storyboard?.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
         
         self.present(Login, animated: true)
-        MoEngageSDKAnalytics.sharedInstance.setUniqueID(Username.text ?? " ")
+        
         
         
     }

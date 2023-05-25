@@ -42,3 +42,4 @@ end
 pod 'MoEngage-iOS-SDK','~>9.8.0'
 pod 'MoEngageInApp','~> 4.8.1'
 pod 'MoEngageInbox','~>2.8.1'
+pod 'MoEngageCards','~> 4.8.0'

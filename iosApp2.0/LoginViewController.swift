@@ -8,6 +8,7 @@
 import UIKit
 import MoEngageSDK
 import MoEngageInApps
+import MoEngageCards
 
 
 class LoginViewController: UIViewController {
@@ -47,6 +48,14 @@ class LoginViewController: UIViewController {
         MoEngageSDKInApp.sharedInstance.showInApp()
     }
     
+    @IBAction func Inbox(_ sender: UIButton) {
+        
+//        // To Push MoEngageCardsListViewController
+//        MoEngageSDKCards.sharedInstance.pushCardsViewController(toNavigationController: self.navigationController!)
+
+        // To Present MoEngageCardsListViewController
+        MoEngageSDKCards.sharedInstance.presentCardsViewController()
+    }
     
     
     override func viewDidLoad() {
